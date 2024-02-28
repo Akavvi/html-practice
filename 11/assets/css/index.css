@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --pad: 16px;
+    --color: #3dd791;
+}
+
+body {
+    background-color: #181726;
+}
+
+.main > h1 {
+    color: white;
+    position: absolute;
+    word-break: break-word;
+    width: 50%;
+    top: 50vh;
+    left: calc(50vw - 25%);
+}
+
+.main > img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 32px;
+}
+
+.block {
+    width: 300px;
+    height: 100%;
+    max-height: 560px;
+    border-radius: 16px;
+    background-color: #413e70;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 1s;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.description {
+    color: #d3d3d3;
+    margin: 16px;
+}
+
+.buy {
+    width: 200px;
+    height: 50px;
+    align-self: center;
+    margin-bottom: 8px;
+    transition-duration: 1s;
+}
+
+.img {
+    width: 300px;
+    height: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.banner {
+    background-color: #31ffaf;
+    width: 350px;
+    height: 100px;
+    border-radius: 16px;
+    margin: 32px;
+    position: fixed;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+}
+
+.banner > h1 {
+    margin-top: 8px;
+}
+
+.banner > .buy {
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 16px;
+    width: 60px;
+    height: 60px;
+    margin-left: 32px;
+}
+
+.email {
+    background-color: #8ecbe8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    margin-top: 32px;
+}
+
+.email > * {
+    margin-left: 32px;
+}
+
+.email > input {
+    width: 150px;
+    height: 25px;
+}
+
+.email > .buy {
+    margin-top: 8px;
+    width: 150px;
+    height: 25px;
+}
